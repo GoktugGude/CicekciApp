@@ -213,7 +213,7 @@ body{
 .toggle-wrapper{
     justify-content: end;
     margin-right: 0px;
-    width: 100%;
+    width: 90%;
 }
 .navbar-wrapper{
     background-color: rgb(244, 242, 236);
@@ -404,8 +404,9 @@ p.dark{
 /* PRDOCUT */
 
 .card-container{
+    width: 100%;
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));
     gap: 30px;
 
 }
@@ -543,7 +544,7 @@ font-weight: 100;
 .social-media-grid{
     display: grid;
     margin-top: 60px;
-        grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+        grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));
         gap: 50px;
 
 }
