@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    height: 200vh;
+    transition: 0.5s;
+}
+
+/* ---- REKLAM ALANI ---- */
+.brand-top{
+    background-color: rgb(121, 37, 61);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    height: 60px;
+}
+
+.brand-top-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 44px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ---- TOGGLE ---- */
+.toggle-wrapper{
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle{
+    width: 60px;
+    background-color: black;
+    position: relative;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toggle-ball{
+    height: 22px;
+    width: 22px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 3px;
+    transition: 0.5s;
+}
+
+/* ---- STICKY NAVBAR ---- */
+.navbar-wrapper{
+    background-color: rgb(244, 242, 236);
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+/* ---- NAVBAR CONTENT ---- */
+.logo-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.menu-list-item a{
+    color: black;
+    transition: 0.3s;
+}
+
+.menu-list-item a:hover{
+    color:rgb(121, 37, 61);
+}
+
+.selected a{
+    color: rgb(121, 37, 61);
+    font-weight: bold;
+}
+
+.login-list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.login-list-item a{
+    font-weight: 100;
+    font-size: 18px;
+    transition: 0.3s;
+    color: black;
+}
+
+.login-list-item a:hover{
+    color: rgb(121, 37, 61);
+}
+
+/* ---- BANNER ---- */
+.main-banner-wrapper{
+    background-image: 
+    linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url("img/GUDE ÇİÇEKÇİLİK (2).png");
+    height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.main-banner-wrapper h2{
+    font-size: 116px;
+    color: wheat;
+    letter-spacing: 90px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+
+}
+
+.main-banner-wrapper p{
+    font-size: 50px;
+    padding-left: 500px;
+    color: wheat;
+    transition: 0.4s;
+}
+
+/* ---- SLOGAN ---- */
+.slogan-wrapper{
+    padding: 96px;
+    height: 30%;
+}
+
+.slogan-text{
+    text-align: center;
+    line-height: 50px;
+}
+
+.slogan-text h2{
+    font-size: 46px;
+    color: rgb(121, 37, 61);
+}
+
+.slogan-text p{
+    font-size: 20px;
+}
+
+/* ---- LAYOUT ---- */
+.container{
+    padding: 25px 80px;
+    transition: 0.4s;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+}
+/* MOBILE RESPONSIVE */
+@media(max-width:768px) {
+    .container{
+    padding: 0 0px;
+
+}
+.brand-top{
+    width: 100vw;
+}
+.brand-top-wrapper{
+    width: 100vw;
+}
+
+.toggle-wrapper{
+    justify-content: end;
+    margin-right: 0px;
+    width: 100%;
+}
+.navbar-wrapper{
+    background-color: rgb(244, 242, 236);
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 10px 0px;
+    position: sticky;
+    width: 100%;
+}
+/* .logo-wrapper{
+    width: 250px;
+} */
+
+.logo-wrapper img{
+    height: 50px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.basket-span{
+    font-size: 14px;
+    display: none;
+}
+
+.basket-item i{
+    font-size: 26px;
+    display: block;
+}
+.main-banner-wrapper p{
+    padding-left: 00px;
+}
+
+.menu-container, .login-item{
+    display: none;
+}
+
+.main-banner-wrapper h2{
+    font-size: 60px;
+    color: wheat;
+    letter-spacing: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    
+
+}
+
+.main-banner-wrapper p{
+    font-size: 26px;
+    padding-left: 60px;
+    color: wheat;
+    transition: 0.4s;
+}
+
+.slogan-text h2{
+    font-size: 34px;
+    color: rgb(121, 37, 61);
+}
+
+.slogan-text p{
+    font-size: 16px;
+}
+.slogan-wrapper{
+    padding: 30px 20px;
+    height: 30%;
+}
+
+.slogan-text{
+    text-align: center;
+    line-height: 30px;
+}
+
+.login-container{
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.hamburger{
+    font-size: 26px;
+    display: block;
+}
+
+.mobile-menu{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: rgb(244, 242, 236);
+    border-radius: 10px 0 0 10px;
+    /* Animasyon başlangıç hali (gizli) */
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+       
+}
+.hamburger-close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 26px;
+}
+.mobile-menu a{
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(121, 37, 61);
+    
+
+}
+
+.mobile-menu.active {
+       transform: translateX(0);
+    opacity: 0.95;
+
+    }
+
+  .main-banner{
+    padding: 30px 0;
+  }
+  .main-banner-wrapper{
+    height: 60vh;
+  }
+}
+
+/* DARK MODE */
+.toggle-ball.dark{
+    background-color: white;
+    transform: translateX(-30px);
+    transition: 0.5s;
+}
+body.dark{
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.navbar-wrapper.dark{
+    background-color: rgb(1, 1, 44);
+}
+
+.navbar-wrapper a.dark{
+    color: rgb(170, 152, 119);
+}
+
+.logo-wrapper.dark{
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper img.dark{
+    border-radius: 0 30px;
+}
+
+.slogan-text p.dark{
+    color: whitesmoke;
+}
+
+.all-products.dark{
+    background-color: transparent;
+}
+
+img.dark{
+        filter: brightness(50%);
+
+}
+
+.card-picture img.dark{
+        filter: brightness(70%);
+        transition: 0.3s;
+
+}
+
+.card-picture img.dark:hover{
+        filter: brightness(100%);
+
+}
+
+img.dark:hover{
+    filter: brightness(100%) !important;
+
+}
+
+p.dark{
+    color: white;
+}
+/* PRDOCUT */
+
+.card-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap: 30px;
+
+}
+
+.card-picture img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.card-wrapper{
+    position: relative;
+    transition: 0.4s;
+}
+.card-wrapper:hover{
+    transform: scale(1.01);
+}
+
+.card-discount{
+    position: absolute;
+    padding: 10px 30px;
+    top: 0;
+    color: #fff;
+    font-weight: 200;
+    background-color: rgb(121, 37, 61);
+}
+
+.card-title{
+    font-family: "Caudex", serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px 0 20px;
+
+}
+
+.card-price{
+     font-family: "Caudex", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(121, 37, 61);
+    display: flex;
+    column-gap: 7px;
+    padding: 0 20px;
+
+}
+.shop-button{
+    display: flex;
+    justify-content: center;
+}
+
+.shop-button-wrapper button{
+    background-color: #fff;
+    border: 1px solid rgb(121, 37, 61);
+    color: rgb(121, 37, 61);
+    transition: 0.4s;
+    padding: 20px 60px;
+    margin-top: 45px;
+
+}
+.old{
+    text-decoration: line-through;
+}
+.shop-button-wrapper button:hover{
+    background-color: rgb(121, 37, 61);
+    border: 1px solid rgb(121, 37, 61);
+    color: white;
+}
+.banner-image{
+    position: relative;
+    
+}
+.text-banner{
+     margin-top: 60px;
+
+}
+.banner-text-container{
+    display: flex;
+    justify-content: center;
+}
+.text-banner-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    color: white;
+     font-family: "Caudex", serif;
+     font-size: 36px;
+
+}
+.text-banner-content p{
+    font-family: Arial, Helvetica, sans-serif;
+margin: 20px 0;
+font-size: 16px;
+font-weight: 100;
+}
+.banner-image img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.order-now{
+    background-color: #fff;
+    border: 1px solid white;
+    color: white;
+    transition: 0.4s;
+    padding: 20px 40px;
+    background-color: transparent;
+}
+
+.order-now:hover{
+    background-color: white;
+    color: rgb(121, 37, 61);
+}
+
+.social-media-container{
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+.social-media-title h2{
+    text-align: center;
+     font-family: "Caudex", serif;
+     color: rgb(121, 37, 61);
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.social-media-grid{
+    display: grid;
+    margin-top: 60px;
+        grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+        gap: 50px;
+
+}
+
+.social-media-card img{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+.social-media-card{
+    position: relative;
+    display: grid;
+    
+
+}
+.layer{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.layer:hover{
+    background-color: rgb(121, 37, 61);
+
+}
+
+.layer h3,.icon{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    font-size: 46px;
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    left: 50%;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer:hover i{
+    opacity: 1;
+    bottom: 40%;
+
+}
