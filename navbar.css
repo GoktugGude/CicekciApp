@@ -24,11 +24,11 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 18px;
+    font-size: clamp(16px, 0.9vw , 30px);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .brand-top-text span{
-    font-size: 20px;
+    font-size: clamp(16px, 1vw , 36px);
     text-decoration: underline;
     cursor: pointer ;
 }
@@ -156,7 +156,7 @@ body{
 }
 
 .main-banner-wrapper h2{
-    font-size: 116px;
+    font-size: clamp(156px, 10vw , 330px);
     color: wheat;
     letter-spacing: 90px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -165,7 +165,7 @@ body{
 }
 
 .main-banner-wrapper p{
-    font-size: 50px;
+    font-size: clamp(50px, 4vw , 150px);
     padding-left: 500px;
     color: wheat;
     transition: 0.4s;
@@ -183,12 +183,12 @@ body{
 }
 
 .slogan-text h2{
-    font-size: 46px;
+    font-size: clamp(46px, 3vw , 100px);
     color: rgb(121, 37, 61);
 }
 
 .slogan-text p{
-    font-size: 20px;
+    font-size: clamp(20px, 2vw , 60px);
 }
 
 /* ---- LAYOUT ---- */
@@ -223,6 +223,24 @@ body{
 
 .layer h3{
     writing-mode: vertical-lr;
+}
+
+.main-banner-wrapper h2{
+    font-size: 96px;
+    color: wheat;
+    letter-spacing: 60px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+
+}
+
+.main-banner-wrapper p{
+    
+    font-size: 40px;
+    padding-left: 100px;
+    color: wheat;
+    transition: 0.4s;
+
 }
 
 .footer-policy{
@@ -554,12 +572,12 @@ p.dark{
 
 .card-discount p{
     font-weight: 100;
-    font-size: 14px;
+    font-size: clamp(14px, 0.9vw , 30px);
 }
 
 .card-title{
     font-family: "Caudex", serif;
-    font-size: 20px;
+    font-size: clamp(20px, 1vw , 42px);
     font-weight: 700;
     padding: 10px 20px 0 20px;
 
@@ -567,7 +585,7 @@ p.dark{
 
 .card-price{
      font-family: "Caudex", serif;
-    font-size: 18px;
+    font-size: clamp(18px, 1vw , 36px);
     font-weight: 400;
     color: rgb(121, 37, 61);
     display: flex;
@@ -586,6 +604,8 @@ p.dark{
     color: rgb(121, 37, 61);
     transition: 0.4s;
     padding: 20px 60px;
+    font-size: clamp(16px, 0.7vw , 40px);
+
 
 }
 .old{
@@ -618,14 +638,14 @@ p.dark{
     align-items: center;
     color: white;
      font-family: "Caudex", serif;
-     font-size: 36px;
+     font-size: clamp(16px, 2vw , 300px);
 
 }
 .text-banner-content p{
         font-family: "Caudex", serif;
 
 margin: 20px 0;
-font-size: 16px;
+font-size: clamp(16px, 1.2vw , 150px);
 font-weight: 100;
 }
 .banner-image img{
@@ -636,6 +656,7 @@ font-weight: 100;
 }
 
 .order-now{
+    font-size: clamp(16px, 0.7vw , 40px);
     background-color: #fff;
     border: 1px solid white;
     color: white;
@@ -662,12 +683,14 @@ font-weight: 100;
      color: rgb(121, 37, 61);
     transition: 0.3s;
     font-weight: 700;
-    font-size: 46px;
+        font-size: clamp(46px, 2vw , 100px);
+
     margin: 100px 0 0 0;
 
 }
 
 .social-media-grid{
+
     display: grid;
     margin-top: 40px;
         grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));
@@ -762,6 +785,7 @@ footer{
     align-items: center;
     justify-content: center;
     height: 500px;
+    font-size: clamp(16px, 1vw , 60px);
     
 }
 
