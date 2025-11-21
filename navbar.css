@@ -13,7 +13,7 @@ body{
 
 /* ---- REKLAM ALANI ---- */
 .brand-top{
-    background-color: rgb(121, 37, 61);
+    background-color: #7D0633;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     height: 60px;
 }
@@ -101,18 +101,18 @@ body{
 
     font-weight: 100;
 }
-
 .menu-list-item a{
     color: black;
     transition: 0.3s;
 }
 
+
 .menu-list-item a:hover{
-    color:rgb(121, 37, 61);
+    color:#7D0633;
 }
 
 .selected a{
-    color: rgb(121, 37, 61);
+    color: #7D0633;
     font-weight: bold;
 }
 
@@ -134,7 +134,7 @@ body{
 }
 
 .login-list-item a:hover{
-    color: rgb(121, 37, 61);
+    color: #7D0633;
 }
 
 /* ---- BANNER ---- */
@@ -161,6 +161,7 @@ body{
     letter-spacing: 90px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     transition: 0.3s;
+    
 
 }
 
@@ -184,7 +185,7 @@ body{
 
 .slogan-text h2{
     font-size: clamp(46px, 3vw , 100px);
-    color: rgb(121, 37, 61);
+    color: #7D0633;
 }
 
 .slogan-text p{
@@ -276,14 +277,34 @@ body{
 .footer-adress-content{
     row-gap: 10px !important;
 }
-
+.card-discount{
+    border-radius: 10px 0 0 0;
+}
 .card-picture img{
     width: 100%;
-    height: 60vh !important;
+    height: 40vh !important;
     object-fit: cover;
+    border-radius: 10px !important;
+    border: 1px solid black;
+
+
+}
+.card-price{
+    padding: 10px 0 25px 25px !important;
+}
+.card-container{
+    width: 80% !important;
+    padding: 0 50px;
+
 }
 
+.card-wrapper{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
 
+
+}
 
 /* SOCIAL-MEDIA MOBIL START */
 .mobile-social-media-container{
@@ -301,7 +322,7 @@ body{
     transition: 0.3s;
 }
 .mobile-text p{
-color: rgb(121, 37, 61);
+color: #7D0633;
 }
 .social-media-title h2{
     font-size: 26px !important;
@@ -319,7 +340,7 @@ ul{
     height: 100%;
     width: 100%;
     font-size: 56px;
-    color: rgb(121, 37, 61);
+    color: #7D0633;
 }
 /* SOCIAL-MEDIA MOBIL END */
 .brand-top{
@@ -391,7 +412,7 @@ ul{
 
 .slogan-text h2{
     font-size: 34px;
-    color: rgb(121, 37, 61);
+    color: #7D0633;
 }
 
 .slogan-text p{
@@ -444,7 +465,7 @@ ul{
     text-align: center;
     padding: 15px;
     font-size: 18px;
-    color: rgb(121, 37, 61);
+    color: #7D0633;
     
 
 }
@@ -465,28 +486,35 @@ ul{
 /* RESPONSIVE END */
 
 /* DARK MODE */
+
 .footer-container.dark{
-    background-color: rgb(1, 1, 44);
+        background-color: #ee7d49;
+
 
 }
 footer.dark{
-    background-color: rgba(0, 0, 0, 0.89);
+        background-color: #ee7d49;
+
 }
 .toggle-ball.dark{
-    background-color: white;
+    background-color: #F2A07B;
     transform: translateX(-30px);
     transition: 0.5s;
 }
 body.dark{
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: #31112C;
 }
 
 .navbar-wrapper.dark{
-    background-color: rgb(1, 1, 44);
+    background-color: #ec692c;
 }
 
 .navbar-wrapper a.dark{
-    color: rgb(170, 152, 119);
+    color: #FBDCC4;
+}
+
+.navbar-wrapper a.dark:hover{
+    color:#7D0633;
 }
 
 .logo-wrapper.dark{
@@ -503,9 +531,13 @@ body.dark{
 }
 
 .all-products.dark{
+    color: #7D0633;
+    background-color: #fbdcc4;
+}
+.all-products.dark:hover{
+    color: #fbdcc4;
     background-color: transparent;
 }
-
 img.dark{
         filter: brightness(50%);
 
@@ -528,12 +560,38 @@ img.dark:hover{
 }
 
 p.dark{
-    color: white;
+    color: #FBDCC4;
+}
+
+a.dark{
+    color: #FBDCC4 ;
+}
+
+
+h2.dark{
+   color: #FBDCC4 !important; 
+}
+
+h3.dark{
+    color: #FBDCC4;
+}
+
+button.dark{
+       color: #FBDCC4; 
+       border-color: #FBDCC4;
+
+}
+
+button.dark:hover{
+       color: #7D0633; 
+       border-color: #FBDCC4;
+       background-color: #FBDCC4;
+
 }
 /* DARK MODE END */
 
 
-/* PRDOCUT */
+/* PRODOCUT */
 
 .card-container{
     width: 100%;
@@ -546,7 +604,7 @@ p.dark{
 
 .card-picture img{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     object-fit: cover;
     border-radius: 7px;
 }
@@ -567,7 +625,7 @@ p.dark{
     top: 0;
     color: #fff;
     font-weight: 100;
-    background-color: rgb(121, 37, 61);
+    background-color: #7D0633;
 }
 
 .card-discount p{
@@ -587,7 +645,7 @@ p.dark{
      font-family: "Caudex", serif;
     font-size: clamp(18px, 1vw , 36px);
     font-weight: 400;
-    color: rgb(121, 37, 61);
+    color: #7D0633;
     display: flex;
     column-gap: 7px;
     padding: 0 20px;
@@ -600,8 +658,8 @@ p.dark{
 
 .shop-button-wrapper button{
     background-color: #fff;
-    border: 1px solid rgb(121, 37, 61);
-    color: rgb(121, 37, 61);
+    border: 1px solid #7D0633;
+    color: #7D0633;
     transition: 0.4s;
     padding: 20px 60px;
     font-size: clamp(16px, 0.7vw , 40px);
@@ -612,8 +670,8 @@ p.dark{
     text-decoration: line-through;
 }
 .shop-button-wrapper button:hover{
-    background-color: rgb(121, 37, 61);
-    border: 1px solid rgb(121, 37, 61);
+    background-color: #7D0633;
+    border: 1px solid #7D0633;
     color: white;
 }
 .banner-image{
@@ -669,7 +727,7 @@ font-weight: 100;
 
 .order-now:hover{
     background-color: white;
-    color: rgb(121, 37, 61);
+    color: #7D0633;
 }
 
 .social-media-container{
@@ -680,7 +738,7 @@ font-weight: 100;
 .social-media-title h2{
     text-align: center;
      font-family: "Caudex", serif;
-     color: rgb(121, 37, 61);
+     color: #7D0633;
     transition: 0.3s;
     font-weight: 700;
         font-size: clamp(46px, 2vw , 100px);
@@ -695,7 +753,7 @@ font-weight: 100;
     margin-top: 40px;
         grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));
         height: 70vh;
-        box-shadow: 0px 0px 40px 1px rgb(121, 37, 61);
+        box-shadow: 0px 0px 20px 1px #7D0633;
         border-radius: 72px;
         margin-bottom: 50px;
         background-color: rgb(192, 94, 122,0.2);
@@ -745,7 +803,7 @@ font-weight: 100;
 }
 
 .layer:hover{
-    background-color: rgb(121, 37, 61);
+    background-color: #7D0633;
     border-radius: 35px;
 
 }
@@ -839,9 +897,116 @@ footer{
     align-self: center;
         height: 100%;
 
+}
 
+footer a{
+    color: black;
+    transition: 0.3s ease-in-out;
+}
 
-    
+footer a:hover{
+    color:  #7D0633;
 }
 
 /* FOOTER END */
+
+/* WHATSAPP BALL START */
+
+.whatsapp-ball-wrapper{
+    display: flex;
+    justify-content: end;
+     position: fixed;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    gap:5px;
+    color: rgb(37, 211, 102);
+    padding: 0 40px 40px 0;
+
+
+}
+
+.whatsapp-ball-wrapper p{
+    font-size: 18px;
+     opacity: 0;
+    transform:  translateX(50%);
+    width: 0;
+
+}
+
+.whatsapp-ball-wrapper:hover p{
+     opacity: 1;
+    bottom: 40%;
+    transform:  translateX(0%);
+    transition: 0.5s ease;
+    width: 100%;
+
+}
+
+.whatsapp-ball-wrapper a{
+    color: rgb(37, 211, 102);
+
+}
+
+.wp-ball{
+    font-size: 56px;
+}
+/* WHATSAPP BALL END */
+
+/* About Us AND Mission START */
+.aboutmision{
+    display: flex;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    gap: 10px;
+    margin-top: 70px;
+
+}
+
+.left-side{
+    border-right: 2px black solid;
+    flex: 1;
+    padding: 40px;
+    line-height: 20px;
+
+}
+.right-side{
+    flex: 1;
+    padding: 40px;
+    line-height: 20px;
+
+
+}
+.right-side p{
+    padding: 40px;
+    line-height: 20px;
+
+}
+
+.left-side p{
+    padding: 40px;
+    line-height: 20px;
+}
+/* About Us AND Mission END */
+
+section {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+        transition: 1s;
+
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 1s;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transition: 1s;
+
+    }
+}
