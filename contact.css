@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Caudex", serif;
+
+}
+
+.contact-title{
+    margin: 18px 0;
+    text-align: center;
+        background-color: #FBDCC4;
+        padding: 8px;
+        color: #7D0633;
+        font-size: 24px;
+}
+
+.contact-container{
+    
+    display: flex;
+    padding: 0 5px 100px 10px;
+    height: 60vh;
+    margin-bottom: 60px;
+    min-width: 800px;
+}
+
+.left-side{
+flex: 1;
+  padding: 40px 60px 40px 40px;
+    min-width: 500px;
+
+}
+
+.right-side{
+    flex: 1;
+    border-left: solid 1px black;
+      padding: 40px;
+}
+
+.contact-input{
+    display: flex;
+    row-gap: 70px;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+
+.contact-input input{
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px #7D0633 solid;
+}
+
+input:focus{
+    outline: none;
+}
+.contact-icon-container{
+}
+
+.text-area{
+    height: 70px;
+    border: 1px solid #7D0633 !important;
+    padding: 10px;
+
+}
+
+iframe{
+    border-radius: 30px;
+    min-width: 400px;
+}
+.map-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    
+}
+
+.adres{
+        flex: 1 1 100%;
+        order: 3;
+}
+
+.contact-button{
+    padding: 50px 0 0 0;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+}
+.contact-button-wrapper{
+     
+}
+.send-message{
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #7D0633;
+    color: #7D0633;
+    transition: 0.4s;
+    padding: 10px 30px;
+}
+
+.send-message:hover{
+   background-color: #7D0633;
+    border: 1px solid #7D0633;
+    color: white;
+}
+
+.contact-icon-container{
+        min-width: 1200px;
+    padding: 0 50px;
+
+
+}
+
+.contact-icon-wrapper{
+
+}
+.contact-content i{
+    font-size: 28px;
+}
+.contact-content p{
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;;
+}
+.contact-icon {
+    font-size: 94px;
+    color: #7D0633;
+ display: flex;
+    justify-content: space-evenly;
+    background-color: #FBDCC4;
+    height: 50px;
+    align-items: center;
+    border-radius: 200px;
+}
+.a{
+        transition: 0.4s ease-in-out;
+
+}
+.a:hover{
+    transform: scale(1.1);
+}
+
+.facebook{
+    margin-bottom: 100px;
+}
+

@@ -6,9 +6,7 @@
 }
 
 body{
-    height: 200vh;
     transition: 0.5s;
-    scroll-behavior: smooth;
 }
 
 /* ---- REKLAM ALANI ---- */
@@ -196,6 +194,10 @@ body{
 .container{
     padding: 25px 80px;
     transition: 0.4s;
+ 
+    
+
+
 }
 
 .hamburger {
@@ -993,7 +995,8 @@ section {
     animation: fadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
-        transition: 1s;
+    transition: 1s;
+        
 
 }
 

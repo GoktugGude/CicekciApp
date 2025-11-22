@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Scroll Snap Mandatory</title>
+<style>
+  .container {
+    height: 300px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Zorunlu kilitlenme */
+    border: 2px solid #444;
+  }
+
+  .item {
+    height: 300px;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background: #ddd;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h2>scroll-snap-type: y mandatory</h2>
+
+<div class="container">
+  <section class="item">1</section>
+  <section class="item">2</section>
+  <section class="item">3</section>
+</div>
+
+</body>
+</html>
